@@ -15,30 +15,30 @@ class Settings
         //// Style Settings
         ////
         val miniMapWindowWidth : Float = 400f,
-        val miniMapRadius : Float = 500 * 100f,
+        val miniMapRadius : Float = 50000f,
         val playerRadius : Float = 4000f,
-        val healthBarWidth : Float = 15000f,
+        val healthBarWidth : Float = 40000f,
         val healthBarHeight : Float = 2000f,
         val directionRadius : Float = 16000f,
         val fov : Float = 90f,
         val aimLineWidth : Float = 1000f,
-        val aimLineRange : Float = 50000f,
+        val aimLineRange : Float = 60000f,
         val aimCircleRadius : Float = 200f,
         val firingLineLength : Float = 20000f,
         val itemZoomThreshold : Float = 0.06f,
-        val airDropTextScale : Float = 1000f,
+        val airDropTextScale : Float = 700f,
 
         //
         // Scales
         //
-        val itemScale : Float = 16f,
+        val itemScale : Float = 25f,
         val staticItemScale : Float = 200f,
-        val mapMarkerScale : Float = 150f,
+        val mapMarkerScale : Float = 500f,
         val airDropScale : Float = 250f,
         val vehicleScale : Float = 25f,
-        val planeScale : Float = 350f,
-        val grenadeScale : Float = 15f,
-        val corpseScale : Float = 30f,
+        val planeScale : Float = 250f,
+        val grenadeScale : Float = 20f,
+        val corpseScale : Float = 35f,
         val redzoneBombScale : Float = 30f,
         val aimTimeThreshold : Int = 1000,
 
@@ -79,24 +79,24 @@ class Settings
         var SKS : Boolean = false,
         val AK47 : Boolean = false,
         val DP28 : Boolean = false,
-        val Saiga12 : Boolean = false,
+        val Saiga12 : Boolean = true,
         val UMP : Boolean = false,
         val Vector : Boolean = false,
-        val UZI : Boolean = false,
+        val UZI : Boolean = true,
 
         //
         // Pistols
         //
-        val G18 : Boolean = false,
-        val Rhino45 : Boolean = false,
-        val M1911 : Boolean = false,
-        val R1895 : Boolean = false,
-        val M9 : Boolean = false,
+        val G18 : Boolean = true,
+        val Rhino45 : Boolean = true,
+        val M1911 : Boolean = true,
+        val R1895 : Boolean = true,
+        val M9 : Boolean = true,
 
         //
         // Meds
         //
-        val Bandage : Boolean = false,
+        val Bandage : Boolean = true,
         val MedKit : Boolean = false,
         val FirstAid : Boolean = false,
         val PainKiller : Boolean = false,
@@ -108,7 +108,7 @@ class Settings
         //
         var QDSnipe : Boolean = false,
         var ExSR : Boolean = false,
-        var ExSMG : Boolean = false,
+        var ExSMG : Boolean = true,
         var ExQuickAR : Boolean = false,
         var ExtQuickSMG : Boolean = false,
         var ExAR : Boolean = false,
@@ -118,17 +118,15 @@ class Settings
         var SuppressorSR : Boolean = false,
         var SuppressorAR : Boolean = false,
         var SuppressorSMG : Boolean = false,
-        var FlashHiderSMG : Boolean = false,
+        var FlashHiderSMG : Boolean = true,
         var FlashHiderAR : Boolean = false,
         var CompensatorAR : Boolean = false,
         var Foregrip : Boolean = false,
         var AngledForegrip : Boolean = false,
 
-        ///
-        /// Information Toggles
-        /// Default Item Information Toggles
-        // -1 Disabled
-        // 1  Enabled
+        //
+        // Information Toggles
+        // Default Item Information Toggles
         var filterWeapon : Int = -1,
         var filterAttach : Int = -1,
         var filterScope : Int = -1,
@@ -140,21 +138,21 @@ class Settings
         var drawcompass : Int = -1,
 
         // Draw Menu
-        var drawmenu : Int = 1,
+        var drawmenu : Int = -1,
 
         // Toggle View Line
         var toggleView : Int = 1,
 
         // Toggle Mini-Map
-        var drawDaMap : Int = 1,
-        // private var toggleVehicles = -1
+        var drawDaMap : Int = -1,
+        //  private var toggleVehicles = -1
         //  private var toggleVNames = -1
 
         // Player Info Toggles 1-4
         var nameToggles : Int = 4,
 
         // Filter Equipment 1-2
-        var filterLvl2 : Int = 0,
+        var filterLvl2 : Int = 4,
 
         // Vehicle Information Toggles 1-2
         var VehicleInfoToggles : Int = 1,
@@ -169,21 +167,21 @@ class Settings
         //
         val nameToogle_Key : String = Input.Keys.toString(Input.Keys.F1),
         val VehicleInfoToggles_Key : String = Input.Keys.toString(Input.Keys.F5),
-        val ZoomToggles_Key : String = Input.Keys.toString(Input.Keys.NUMPAD_8),
+        val ZoomToggles_Key : String = Input.Keys.toString(Input.Keys.NUM_8),
 
         val drawcompass_Key : String = Input.Keys.toString(Input.Keys.F2),
         val toggleView_Key : String = Input.Keys.toString(Input.Keys.F4),
         val drawDaMap_Key : String = Input.Keys.toString(Input.Keys.F3),
         val drawmenu_Key : String = Input.Keys.toString(Input.Keys.F12),
 
-        val filterWeapon_Key : String = Input.Keys.toString(Input.Keys.NUMPAD_1),
-        val filterLvl2_Key : String = Input.Keys.toString(Input.Keys.NUMPAD_2),
-        val filterHeals_Key : String = Input.Keys.toString(Input.Keys.NUMPAD_3),
+        val filterWeapon_Key : String = Input.Keys.toString(Input.Keys.NUM_1),
+        val filterLvl2_Key : String = Input.Keys.toString(Input.Keys.NUM_2),
+        val filterHeals_Key : String = Input.Keys.toString(Input.Keys.NUM_3),
 
-        val filterThrow_Key : String = Input.Keys.toString(Input.Keys.NUMPAD_4),
-        val filterAttach_Key : String = Input.Keys.toString(Input.Keys.NUMPAD_5),
-        val filterScope_Key : String = Input.Keys.toString(Input.Keys.NUMPAD_6),
-        val filterAmmo_Key : String = Input.Keys.toString(Input.Keys.NUMPAD_7),
+        val filterThrow_Key : String = Input.Keys.toString(Input.Keys.NUM_4),
+        val filterAttach_Key : String = Input.Keys.toString(Input.Keys.NUM_5),
+        val filterScope_Key : String = Input.Keys.toString(Input.Keys.NUM_6),
+        val filterAmmo_Key : String = Input.Keys.toString(Input.Keys.NUM_7),
 
         val camera_zoom_Minus_Key : String = Input.Keys.toString(Input.Keys.MINUS),
         val camera_zoom_Plus_Key : String = Input.Keys.toString(Input.Keys.PLUS),
@@ -263,8 +261,6 @@ class Settings
     {
       throw SecurityException("Can't read settings.json")
     }
-
-
     val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
     val adapter = moshi.adapter(jsonsettings::class.java)
     val set = adapter.fromJson(f.readText())

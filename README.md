@@ -1,8 +1,3 @@
 # Gaydar
 
-## the gay radar for gay people
-
-### Known pastes using this radar source:
- * Albedo
-
-signed coolmemes from UC
+This Fork is only used for https://github.com/zecjy/PUBG_radar_setup.
